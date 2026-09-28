@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f5;
+    color: #17221c;
+    line-height: 1.6;
+}
+
+header {
+    background: #0b2e20;
+    color: white;
+    padding: 24px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #5ee38a;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+header p {
+    color: #dcebe2;
+    font-size: 0.95rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+main h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.05;
+    max-width: 750px;
+    margin-bottom: 25px;
+    
+}
+
+main > p {
+    max-width: 720px;
+    margin-bottom: 20px;
+    color: #53635a;
+    font-size: 1.05rem;
+}
+
+button {
+    background: #168447;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    margin: 10px 8px 10px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0f6d39;
+    transform: translateY(-2px);
+}
+
+small {
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    border-left: 4px solid #168447;
+    background: #e9f1ec;
+    color: #526158;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 100%;
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #168447;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.hero-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    min-width: 280px;
+}
+
+.hero-card h3 {
+    color: #0b2e20;
+    margin-bottom: 15px;
+}
+
+.hero-card p {
+    color: #53635a;
+    margin-bottom: 8px;
+}
+
+.botoes {
+    margin-top: 10px;
+}
+.indicadores {
+    margin-top: 70px;
+}
+
+.indicadores > h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+    color: #168447;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #53635a;
+}
+.graficos {
+    margin-top: 60px;
+}
+
+.graficos canvas {
+    width: 100% !important;
+    max-height: 400px;
+}
+.graficos {
+    margin-top: 60px;
+}
+
+.graficos canvas {
+    width: 100% !important;
+    max-height: 400px;
+}
+.ponto-atencao {
+    margin-top: 40px;
+    padding: 25px;
+    background: #fff4e5;
+    border-left: 5px solid #e09b3d;
+    border-radius: 10px;
+}
+
+.ponto-atencao h3 {
+    color: #9a641c;
+    margin-bottom: 10px;
+}
+
+.ponto-atencao p {
+    color: #5f5548;
+}
+.ponto-atencao {
+    margin-top: 40px;
+    padding: 28px;
+    background: white;
+    border-radius: 16px;
+    border-left: 5px solid #168447;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+}
+
+.atencao-tag {
+    display: inline-block;
+    color: #168447;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.ponto-atencao h3 {
+    color: #0b2e20;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.frequencia-destaque {
+    color: #168447;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
+.ponto-atencao p {
+    color: #53635a;
+    line-height: 1.6;
+}
+.indicadores-analise {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.indicadores-analise .card {
+    flex: 1;
+}
+
+.indicadores-analise .card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.indicadores-analise .card h3 {
+    color: #168447;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.indicadores-analise .card p {
+    color: #53635a;
+}

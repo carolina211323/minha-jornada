@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise da Jornada | Minha Jornada</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MINHA JORNADA</h1>
+        <p>PERMANECER - Inteligência Educacional</p>
+    </header>
+
+    <main>
+
+        <section class="hero-text">
+
+            <span class="tag">ANÁLISE DA JORNADA</span>
+
+            <h2>O que os dados mostram?</h2>
+
+            <p>
+                A análise dos dados educacionais simulados permite
+                identificar padrões de frequência, desempenho e
+                participação dos estudantes.
+            </p> 
+            
+
+<div class="hero-card">
+
+    <h3>Principais indicadores</h3>
+
+    <div class="indicadores-analise">
+
+        <div class="card">
+            <h3>84%</h3>
+            <p>Frequência média</p>
+        </div>
+
+        <div class="card">
+            <h3>7,5</h3>
+            <p>Média das notas</p>
+        </div>
+
+        <div class="card">
+            <h3>15,6</h3>
+            <p>Média de atividades</p>
+        </div>
+
+    </div>
+
+    <p>
+        Os dados indicam uma frequência média de 84% entre os estudantes analisados.
+        A média de notas foi 7,5, enquanto a participação em atividades apresentou
+        uma média de 15,6 atividades por estudante.
+    </p>
+
+</div>
+
+<div class="graficos">
+
+    <h3>Frequência dos estudantes</h3>
+
+    <canvas id="graficoAnalise"></canvas> 
+    <p>
+    A análise dos dados permite acompanhar diferenças de frequência
+    entre os estudantes e identificar situações que podem precisar
+    de maior atenção e acompanhamento.
+</p> 
+<div class="ponto-atencao">
+
+    <span class="atencao-tag">PONTO DE ATENÇÃO</span>
+
+    <h3>Estudante 04</h3>
+
+    <div class="frequencia-destaque">69%</div>
+
+    <p>
+        Menor frequência do grupo. Esse indicador pode sinalizar
+        a necessidade de um acompanhamento mais próximo.
+    </p>
+
+</div>
+
+</div>
+
+
+    </section>
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    new Chart(document.getElementById("graficoAnalise"), {
+        type: "bar",
+
+        data: {
+            labels: [
+                "Estudante 01",
+                "Estudante 02",
+                "Estudante 03",
+                "Estudante 04",
+                "Estudante 05"
+            ],
+
+            datasets: [{
+                label: "Frequência (%)",
+                data: [92, 78, 95, 69, 86]
+            }]
+        },
+
+        options: {
+            responsive: true,
+
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: "Frequência (%)"
+                    }
+                },
+
+                x: {
+                    title: {
+                        display: true,
+                        text: "Estudantes"
+                    }
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
